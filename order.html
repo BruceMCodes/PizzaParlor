@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--
+        Name: Bruce Marshall
+        Date: 7/7/2023
+        Filename: order.html
+        Assignment: Cheech's Pizza
+    -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/1a94aeacb5.js" crossorigin="anonymous"></script>
+    <title>Orders</title>
+</head>
+<body>
+    <header>
+        <h1>Cheech's Pizza</h1>
+        <div class="navigation">
+            <div class="home">
+                <a>Home</a>
+            </div>
+            <div class="menu">
+                <a href="menu.html">Menu</a>
+            </div>
+            <div class="orders">
+                <a href="order.html">~ Order Online ~</a>
+            </div>
+            <div class="location">
+                <a>Our Location</a>
+            </div>
+        </div>
+    </header>
+    <article>
+        <div class="orderContainer">
+            <div class="form">
+                <!--Form-->
+                <h1>Order online</h1>
+                <form method="get" action="order.html">
+                    <fieldset>
+                        <legend>Fill out the form</legend>
+                        <label for="FirstName">
+                            First Name: 
+                            <input type="text" autofocus name="FirstName" id="FirstName" required placeholder="First Name">
+                        </label>
+                        <label for="LastName">
+                            Last Name: 
+                            <input type="text" name="LastName" id="LastName" required placeholder="Last Name">
+                        </label>
+                        <label for="Phone">
+                            Phone: 
+                            <input type="tel" name="phone" id="Phone" placeholder="Phone Number">
+                        </label>
+                        <label for="PizzaType">
+                            Pizza type: 
+                            <select id="PizzaType" name="PizzaType">
+                                <option value="Pineapple">Pineapple</option>
+                                <option value="Cheese">Cheese</option>
+                                <option value="Margherita">Margherita</option>
+                                <option value="Gyro">Gyro</option>
+                                <option value="Persius">Persius</option>
+                                <option value="PineappleChicken">Pineapple w/ Chicken</option>
+                            </select>
+                        </label>
+                        <label for="PizzaNum">
+                            Number of pizzas: 
+                            <select id="PizzaNum" name="PizzaNum">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                            </select>
+                        </label>
+                        <input type="submit" value="Submit">
+                    </fieldset>
+                </form>
+            </div>
+            <div class="reviews">
+                <div>
+                    <h1>Customer reviews</h1>
+                    <div class="reviewText">
+                        <p><i>"Excellent pizza, probably the best I have ever had" - Nemo Noteworthy</i></p>
+                        <p><i>"Cheech knows how to make a pizza" - Coral Lewis</i></p>
+                    </div>
+                    
+                </div>
+                <div>
+                    <h1>Social Media</h1>
+                    <div class="icons">
+                        <div><a href="https:/facebook.com"><i class="fa-brands fa-square-facebook"></i></a></div>
+                        <div><a href="https:/instagram.com"><i class="fa-brands fa-square-instagram"></i></a></div>
+                        <div><a href="https:/twitter.com"><i class="fa-brands fa-square-twitter"></i></a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </article>
+    <footer>
+        <p>Made by Bruce Marshall - July 7th, 2023</p>
+    </footer>
+</body>
+</html>
